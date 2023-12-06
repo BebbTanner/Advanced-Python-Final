@@ -37,13 +37,24 @@ for i in range(1, 10):
                 '''
                 haysTournaments.append(tourney)
 
+
+'''
+Some background information: Startgg has the tournamnet pages and in those pages are the individual events. 
+That is what I need in order to get player placements.
+
+With that being stated, This command is going to go through and find the slug names of the events.
+When using these commands to find info about anything it is required to use the slug name.
+'''
 for tourney in haysTournaments:
     events = smash.tournament_show_events(tourney['slug'])
     tourney['events'] = events
 
+    '''
+    
+    '''
     for event in tourney['events']:
         results = smash.tournament_show_lightweight_results(tourney['slug'],event['slug'], 1)
         event['results'] = results
 
 
-pprint.pprint(haysTournaments)
+#pprint.pprint(haysTournaments)

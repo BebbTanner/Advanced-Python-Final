@@ -1,4 +1,9 @@
-# FHSU start gg project
+# Advanced Python Final Project
+
+This is my final project for my Advanced Python class. My intended purpose
+for this project is to create my own startgg style page. This page will 
+evenutally be hosted on the FHSU servers so that other people can access it.
+
 
 # Packages
 
@@ -27,7 +32,5 @@ Pysmashgg
 - Went in to meet with my professor to clean up my program
 - He helped me add a set of new functions to help it flow
 
-
-# Next objectives:
-- Figure out how to automate the api calls using django
-- Figure out how to automate putting the new data into the confige file and label them correctly
+No longer needed the LGLSData file. All of that data will now be 
+stored in a JSON file.
