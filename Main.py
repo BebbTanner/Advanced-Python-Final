@@ -16,6 +16,13 @@ that I will be grabbing from startgg's site.
 haysTournaments = []
 
 smash = pysmashgg.SmashGG(smash_key, True)
+'''
+I am using command to get the info on every page of the results. Sorting by page is one 
+of the arguments needed when searching for tourney info. If I want to get all of the 
+information I have to sort through all of the pages. 
+
+From what I understand 10 pages is no the max limit. It is just a random limit that was selected.
+'''
 for i in range(1, 10):
     '''
     The command on line 24 is sorting all of the tournaments by state.
@@ -50,11 +57,17 @@ for tourney in haysTournaments:
     tourney['events'] = events
 
     '''
+    This for loop is going to go through all of the events for all of the tourneys that are in the 
+    list and get the results of those events.
     
+    If the event has not happened yet or been finished it will just put an empty value in the results section.
     '''
     for event in tourney['events']:
         results = smash.tournament_show_lightweight_results(tourney['slug'],event['slug'], 1)
         event['results'] = results
 
-
-#pprint.pprint(haysTournaments)
+'''
+This print statement was just implemented to be sure That everything is working correctly. More than likely this 
+print statement will not be in the final version.
+'''
+pprint.pprint(haysTournaments)

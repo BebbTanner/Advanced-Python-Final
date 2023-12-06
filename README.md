@@ -31,6 +31,10 @@ Pysmashgg
 # Dec 6
 - Went in to meet with my professor to clean up my program
 - He helped me add a set of new functions to help it flow
+- Added what I believe to be the final documentation of the project
 
 No longer needed the LGLSData file. All of that data will now be 
 stored in a JSON file.
+
+Moving foward I am going to start labeling the events the same as the 
+tournament name. This will make the database easier to read.
