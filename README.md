@@ -23,6 +23,11 @@ Pysmashgg
 - added the new lgls data for the newer brackets
 - created the lgls player data but did not add the data in
 
+# Dec 6
+- Went in to meet with my professor to clean up my program
+- He helped me add a set of new functions to help it flow
+
+
 # Next objectives:
 - Figure out how to automate the api calls using django
 - Figure out how to automate putting the new data into the confige file and label them correctly
